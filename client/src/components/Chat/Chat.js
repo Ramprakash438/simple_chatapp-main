@@ -16,7 +16,7 @@ export default function Chat() {
     const [messages, setMessages] = useState([])
 
     let location = useLocation()
-    const ENDPOINT = 'http://localhost:5000'
+    const ENDPOINT = 'https://simple-chat--app.herokuapp.com'
     useEffect(() => {
         const { name, room } = queryString.parse(location.search)
         socket = io(ENDPOINT);
