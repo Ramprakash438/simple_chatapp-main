@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000
 const httpServer = http.createServer(app)
 const io = new Server(httpServer, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://aquamarine-sawine-7db80d.netlify.app",
         credentials: true
     }
 })
